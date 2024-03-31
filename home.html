@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Webpage</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center; /* Align content vertically */
+        }
+        header img {
+            margin-right: 10px; /* Adjusted margin */
+            height: 110px; /* Adjust height as needed */
+        }
+        header input[type="search"] {
+            margin-left: 100px;
+            width: 1000px; /* Adjust the width as desired */
+            padding: 8px; /* Adjust padding for better appearance */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        header a {
+            text-decoration: none; /* Remove underline */
+            color: #fff; /* Set link text color to white */
+        }
+        header a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #000000; /* Adjusted color */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .product-container {
+            width: calc(20% - 20px); /* Adjust width for 5 products per row */
+            margin-right: 20px; /* Adjust margin between containers */
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            float: left; /* Float containers to left */
+            box-sizing: border-box; /* Include border and padding in width calculation */
+        }
+        .product-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product-container button {
+            background-color: black; /* Green color */
+            color: white; /* Text color */
+            padding: 12px 20px; /* Adjust padding for larger button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition */
+            margin-right: 10px; /* Adjust margin between buttons */
+        }
+        .product-container button:hover {
+            background-color: rgb(105, 107, 104); /* Dark green color on hover */
+        }
+
+
+        /* Clearfix to prevent floating issues */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="sw.jpg" alt="Logo"> <!-- Replace "your-logo.png" with your actual logo file -->
+        <a href="about.html"><h2>About Us</h2></a>
+        <input type="search" placeholder="Search...">
+    </header>
+
+    <main class="clearfix">
+        <div class="product-container">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1 goes here...</p>
+            <button>Add to Cart</button>
+            <button class="buy-btn" data-url="https://example.com/product1">Buy now</button>
+        </div>
+        
+        <div class="product-container">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button class="buy-btn" data-url="https://example.com/product2">Buy now</button>
+        </div>
+        
+        <div class="product-container">
+            <img src="product3.jpg" alt="Product 2">
+            <h3>Product 3</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product4.jpg" alt="Product 2">
+            <h3>Product 4</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product5.jpg" alt="Product 2">
+            <h3>Product 5</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product6.jpg" alt="Product 2">
+            <h3>Product 6</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product7.jpg" alt="Product 2">
+            <h3>Product 7</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product8.jpg" alt="Product 2">
+            <h3>Product 8</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product9.jpg" alt="Product 2">
+            <h3>Product 9</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product10.jpg" alt="Product 2">
+            <h3>Product 10</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <div class="product-container">
+            <img src="product10.jpg" alt="Product 2">
+            <h3>Product 10</h3>
+            <p>Description of Product 2 goes here...</p>
+            <button>Add to Cart</button>
+            <button>Buy now</button>
+        </div>
+
+        <!-- Add more product containers as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Swift Mart. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Linking the script.js file -->
+    <script src="slideshow.js"></script>
+
+</body>
+</html>
+
